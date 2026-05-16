@@ -17,6 +17,7 @@
         .border-gold-accent { border-color: rgba(229, 193, 88, 0.2); }
         .bg-card-dark { background-color: rgba(1, 26, 15, 0.85); }
 
+        /* Fine, Elegant Light Golden Geometric Grid Lines */
         .gold-grid-pattern {
             background-image: 
                 linear-gradient(to right, rgba(229, 193, 88, 0.05) 1px, transparent 1px),
@@ -24,7 +25,31 @@
             background-size: 50px 50px;
         }
 
-        /* Continuous Simmering Glow & Floating Animation for WhatsApp */
+        /* CUSTOM HIGHLIGHTER GLOW SHADOWS AND LIFT ANIMATIONS */
+        .premium-glow-box {
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            box-shadow: 0 4px 20px -2px rgba(2, 35, 20, 0.7), 0 2px 10px -3px rgba(229, 193, 88, 0.05);
+        }
+        
+        .premium-glow-box:hover {
+            transform: translateY(-6px);
+            border-color: rgba(229, 193, 88, 0.45);
+            box-shadow: 0 20px 35px -10px rgba(4, 120, 87, 0.35), 0 10px 20px -5px rgba(229, 193, 88, 0.15);
+        }
+
+        /* Special High-Intensity Glow for the Core Protect Framework Card */
+        .gold-glow-box {
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            box-shadow: 0 4px 25px -2px rgba(2, 35, 20, 0.8), 0 2px 12px -2px rgba(229, 193, 88, 0.1);
+        }
+
+        .gold-glow-box:hover {
+            transform: translateY(-8px);
+            border-color: rgba(229, 193, 88, 0.7);
+            box-shadow: 0 25px 45px -12px rgba(229, 193, 88, 0.25), 0 15px 25px -8px rgba(4, 120, 87, 0.2);
+        }
+
+        /* Continuous Simmering Glow & Floating Animation for WhatsApp Button */
         @keyframes dynamicFloat {
             0% {
                 transform: translateY(0px);
@@ -79,22 +104,22 @@
             </p>
             
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 pt-10">
-                <div class="bg-card-dark p-4 rounded-xl border border-gold-accent shadow-xl">
+                <div class="bg-card-dark p-4 rounded-xl border border-gold-accent premium-glow-box">
                     <div class="text-gold-champagne/60 text-[10px] uppercase tracking-wider">Capital Entry</div>
                     <div class="text-2xl font-bold text-white mt-1">₹2 Crores</div>
                     <div class="text-gold-bright text-[11px] mt-0.5 font-medium">One-Time Deposit</div>
                 </div>
-                <div class="bg-card-dark p-4 rounded-xl border border-gold-accent shadow-xl">
+                <div class="bg-card-dark p-4 rounded-xl border border-gold-accent premium-glow-box">
                     <div class="text-gold-champagne/60 text-[10px] uppercase tracking-wider">Lien Asset Base</div>
                     <div class="text-2xl font-bold text-gold-bright mt-1">14 Chargers</div>
                     <div class="text-slate-400 text-[11px] mt-0.5">Fully Dedicated</div>
                 </div>
-                <div class="bg-card-dark p-4 rounded-xl border border-gold-accent shadow-xl">
+                <div class="bg-card-dark p-4 rounded-xl border border-gold-accent premium-glow-box">
                     <div class="text-gold-champagne/60 text-[10px] uppercase tracking-wider">Projected 10-Yr Yield</div>
                     <div class="text-2xl font-bold text-white mt-1">₹12.99 Cr+</div>
                     <div class="text-slate-400 text-[11px] mt-0.5">Steady Cash Flow</div>
                 </div>
-                <div class="bg-card-dark p-4 rounded-xl border border-gold-accent shadow-xl">
+                <div class="bg-card-dark p-4 rounded-xl border border-gold-accent premium-glow-box">
                     <div class="text-gold-champagne/60 text-[10px] uppercase tracking-wider">Return Multiple</div>
                     <div class="text-2xl font-bold text-gold-bright mt-1">6.5x</div>
                     <div class="text-gold-champagne text-[11px] mt-0.5 font-medium">Lifecycle Total</div>
@@ -117,7 +142,7 @@
                     The gap between operational cars and chargers grows wider every single day. Establishing a protected transaction stake in this infrastructure grid lets you permanently capture premium recurring returns during this macro transition.
                 </p>
             </div>
-            <div class="bg-card-dark p-8 rounded-2xl border border-gold-accent shadow-2xl space-y-6">
+            <div class="bg-card-dark p-8 rounded-2xl border border-gold-accent gold-glow-box space-y-6">
                 <div class="text-xs uppercase tracking-widest text-gold-champagne font-semibold border-b border-gold-accent pb-3">
                     Your Early Adopter Moat
                 </div>
@@ -149,7 +174,7 @@
         </div>
 
         <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 mt-12">
-            <div class="bg-card-dark p-8 rounded-2xl border border-gold-accent shadow-xl space-y-6">
+            <div class="bg-card-dark p-8 rounded-2xl border border-gold-accent premium-glow-box space-y-6">
                 <div class="text-slate-400 text-xs font-semibold uppercase tracking-wider">Strategic Layout Parameters</div>
                 <h3 class="text-xl font-bold text-white">What This Asset Class is NOT</h3>
                 <ul class="space-y-4 text-xs text-slate-300 font-light">
@@ -159,7 +184,7 @@
                 </ul>
             </div>
 
-            <div class="bg-card-dark p-8 rounded-2xl border-2 border-gold-bright/40 relative shadow-2xl space-y-6">
+            <div class="bg-card-dark p-8 rounded-2xl border-2 border-gold-bright/40 relative gold-glow-box space-y-6">
                 <div class="absolute top-4 right-4 text-[10px] bg-gold-bright text-slate-950 font-bold px-3 py-1 rounded-full uppercase tracking-widest">Asset-Backed Architecture</div>
                 <div class="text-gold-bright text-xs font-semibold uppercase tracking-wider">FUEL by Willpower™ Advantage</div>
                 <h3 class="text-xl font-bold text-white">The Financial "Gahan" Mortgage Play</h3>
@@ -181,7 +206,7 @@
             </div>
 
             <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-gradient-to-b from-[#011a0f] to-card-dark p-8 rounded-2xl border border-gold-accent shadow-xl space-y-4">
+                <div class="bg-gradient-to-b from-[#011a0f] to-card-dark p-8 rounded-2xl border border-gold-accent premium-glow-box space-y-4">
                     <div class="text-xs font-bold border border-gold-bright text-gold-bright px-3 py-1 rounded-full inline-block uppercase tracking-wider">Highway & Mall Heavyweights</div>
                     <div class="text-4xl font-black text-white">8 Units</div>
                     <div class="text-sm font-semibold text-gold-champagne">120 kW Super-Fast Dual-Gun Stations</div>
@@ -190,7 +215,7 @@
                     </p>
                 </div>
 
-                <div class="bg-gradient-to-b from-[#011a0f] to-card-dark p-8 rounded-2xl border border-gold-accent shadow-xl space-y-4">
+                <div class="bg-gradient-to-b from-[#011a0f] to-card-dark p-8 rounded-2xl border border-gold-accent premium-glow-box space-y-4">
                     <div class="text-xs font-bold border border-gold-bright text-gold-bright px-3 py-1 rounded-full inline-block uppercase tracking-wider">City Logistics Arteries</div>
                     <div class="text-4xl font-black text-white">6 Units</div>
                     <div class="text-sm font-semibold text-gold-champagne">60 kW Express Dual-Gun Stations</div>
@@ -209,7 +234,7 @@
                 <div class="w-20 h-[1px] bg-gold-bright mx-auto mt-4"></div>
             </div>
 
-            <div class="overflow-x-auto rounded-xl border border-gold-accent bg-card-dark shadow-2xl">
+            <div class="overflow-x-auto rounded-xl border border-gold-accent bg-card-dark gold-grid-pattern shadow-2xl premium-glow-box">
                 <table class="w-full text-left border-collapse min-w-[600px]">
                     <thead>
                         <tr class="bg-[#011a0f] text-gold-champagne text-xs uppercase font-medium tracking-widest border-b border-gold-accent">
@@ -220,25 +245,25 @@
                         </tr>
                     </thead>
                     <tbody class="text-xs divide-y divide-gold-accent/40 text-slate-300 font-light">
-                        <tr class="hover:bg-white/5 transition">
+                        <tr class="hover:bg-white/5 transition duration-200">
                             <td class="p-5 font-semibold text-white">Year 1 (Setup & Network Stabilization)</td>
                             <td class="p-5">₹55 Lakhs+</td>
                             <td class="p-5">₹25 Lakhs+</td>
                             <td class="p-5 font-bold text-white">₹80 Lakhs+</td>
                         </tr>
-                        <tr class="hover:bg-white/5 transition">
+                        <tr class="hover:bg-white/5 transition duration-200">
                             <td class="p-5 font-semibold text-white">Year 3 (Market Scale & Utility Scaling)</td>
                             <td class="p-5">₹1.84 Crores+</td>
                             <td class="p-5">₹86 Lakhs+</td>
                             <td class="p-5 font-bold text-white">₹2.70 Crores+</td>
                         </tr>
-                        <tr class="hover:bg-white/5 transition">
+                        <tr class="hover:bg-white/5 transition duration-200">
                             <td class="p-5 font-semibold text-white">Year 5 (Network Dominance Realization)</td>
                             <td class="p-5">₹3.68 Crores+</td>
                             <td class="p-5">₹1.72 Crores+</td>
                             <td class="p-5 font-bold text-white">₹5.40 Crores+</td>
                         </tr>
-                        <tr class="hover:bg-white/5 transition">
+                        <tr class="hover:bg-white/5 transition duration-200">
                             <td class="p-5 font-semibold text-white">Year 8 (Peak Lifecycle Market Volume)</td>
                             <td class="p-5">₹6.63 Crores+</td>
                             <td class="p-5">₹3.11 Crores+</td>
@@ -268,7 +293,7 @@
             </div>
 
             <div class="grid md:grid-cols-3 gap-6">
-                <div class="md:col-span-2 bg-card-dark p-6 rounded-xl border border-gold-accent space-y-4 shadow-xl">
+                <div class="md:col-span-2 bg-card-dark p-6 rounded-xl border border-gold-accent space-y-4 shadow-xl premium-glow-box">
                     <div class="flex items-center space-x-3 border-b border-gold-accent/40 pb-3">
                         <span class="text-2xl">🏭</span>
                         <h3 class="text-xs font-bold tracking-widest uppercase text-gold-bright">Primary Manufacturing Ecosystem</h3>
@@ -284,7 +309,7 @@
                     </div>
                 </div>
 
-                <div class="bg-card-dark p-6 rounded-xl border border-gold-accent space-y-4 shadow-xl">
+                <div class="bg-card-dark p-6 rounded-xl border border-gold-accent space-y-4 shadow-xl premium-glow-box">
                     <div class="flex items-center space-x-3 border-b border-gold-accent/40 pb-3">
                         <span class="text-2xl">🏢</span>
                         <h3 class="text-xs font-bold tracking-widest uppercase text-gold-bright">Regional Offices</h3>
@@ -311,19 +336,19 @@
                 To guarantee prime operational locations and insulate grid utilization, Phase 1 capital placement blocks are strictly structured per milestone window. Connect with us directly to evaluate options.
             </p>
             
-            <div class="grid md:grid-cols-2 gap-4 max-w-md mx-auto pt-4 text-left text-xs font-light bg-card-dark/40 p-4 rounded-xl border border-gold-accent/40">
+            <div class="grid md:grid-cols-2 gap-4 max-w-md mx-auto pt-4 text-left text-xs font-light bg-card-dark/40 p-4 rounded-xl border border-gold-accent/40 premium-glow-box">
                 <div class="space-y-1">
                     <p class="text-gold-bright uppercase tracking-wider font-semibold">Direct Desk:</p>
-                    <a href="https://wa.me/917498285423?text=Namaste%20Willpower%20Team,%20I%20am%20interested%20in%20the%20FUEL%20Infrastructure%20Placement." target="_blank" class="text-slate-300 hover:text-white transition block font-mono">+91 7498285423</a>
+                    <a href="https://wa.me/917498285423?text=Namaste%20Willpower%20Team,%20I%20am%20interested%20in%20the%20FUEL%20Infrastructure%20Placement." target="_blank" class="text-slate-300 hover:text-white transition block font-mono font-semibold text-sm">+91 7498285423</a>
                 </div>
                 <div class="space-y-1">
                     <p class="text-gold-bright uppercase tracking-wider font-semibold">Secure Mailbox:</p>
-                    <a href="mailto:care@worldofwillpower.com" class="text-slate-300 hover:text-white transition block font-mono">care@worldofwillpower.com</a>
+                    <a href="mailto:care@worldofwillpower.com" class="text-slate-300 hover:text-white transition block font-mono font-semibold text-sm">care@worldofwillpower.com</a>
                 </div>
             </div>
 
             <div class="pt-6">
-                <a href="https://wa.me/917498285423?text=Namaste%20Willpower%20Team,%20I%20am%20interested%20in%20the%20FUEL%20Infrastructure%20Placement." target="_blank" rel="noopener noreferrer" class="inline-block bg-gradient-to-r from-gold-bright via-yellow-500 to-yellow-600 text-slate-950 font-bold px-10 py-4 rounded-full shadow-2xl hover:from-yellow-400 hover:to-gold-bright transition-all duration-300 tracking-widest uppercase text-xs border border-white/10">
+                <a href="https://wa.me/917498285423?text=Namaste%20Willpower%20Team,%20I%20am%20interested%20in%20the%20FUEL%20Infrastructure%20Placement." target="_blank" rel="noopener noreferrer" class="inline-block bg-gradient-to-r from-gold-bright via-yellow-500 to-yellow-600 text-slate-950 font-bold px-10 py-4 rounded-full shadow-2xl hover:from-yellow-400 hover:to-gold-bright transition-all duration-300 transform hover:scale-105 tracking-widest uppercase text-xs border border-white/10">
                     Initiate Allocation Protocol
                 </a>
             </div>
@@ -340,7 +365,7 @@
     <a href="https://wa.me/917498285423?text=Namaste%20Willpower%20Team,%20I%20am%20interested%20in%20the%20FUEL%20Infrastructure%20Placement." 
        target="_blank" 
        rel="noopener noreferrer" 
-       class="fixed bottom-6 right-6 z-50 bg-[#25D366] hover:bg-[#E5C158] text-white hover:text-slate-950 p-4 rounded-full animate-whatsapp-simmer transition-colors duration-300 flex items-center justify-center group"
+       class="fixed bottom-6 right-6 z-50 bg-[#25D366] hover:bg-[#E5C158] text-white hover:text-slate-950 p-4 rounded-full shadow-2xl animate-whatsapp-simmer transition-colors duration-300 flex items-center justify-center group"
        title="Connect via WhatsApp">
         <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.713-1.453L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.965C16.428 1.978 13.96 1.953 12.01 1.953c-5.444 0-9.866 4.372-9.87 9.802 0 1.685.459 3.332 1.328 4.793l-.997 3.645 3.76-.978zm11.567-5.65c-.29-.145-1.716-.845-1.983-.942-.266-.097-.461-.145-.655.145-.194.29-.75.942-.919 1.134-.169.194-.338.219-.628.074-.29-.145-1.226-.452-2.335-1.439-.863-.768-1.446-1.717-1.615-2.007-.169-.29-.018-.447.127-.591.13-.13.29-.338.435-.507.145-.169.194-.29.29-.483.097-.194.049-.363-.025-.507-.074-.145-.655-1.576-.897-2.158-.236-.569-.475-.492-.655-.501-.169-.008-.363-.01-.557-.01-.194 0-.507.073-.772.363-.266.29-1.014.991-1.014 2.415 0 1.424 1.039 2.798 1.184 2.992.145.194 2.046 3.125 4.956 4.381.692.298 1.233.477 1.655.611.695.22 1.329.19 1.83.114.558-.084 1.716-.701 1.958-1.378.242-.677.242-1.257.17-1.378-.073-.121-.266-.194-.556-.34z"/>
