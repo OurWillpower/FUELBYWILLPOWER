@@ -23,6 +23,26 @@
                 linear-gradient(to bottom, rgba(229, 193, 88, 0.05) 1px, transparent 1px);
             background-size: 50px 50px;
         }
+
+        /* Continuous Simmering Glow & Floating Animation for WhatsApp */
+        @keyframes dynamicFloat {
+            0% {
+                transform: translateY(0px);
+                box-shadow: 0 10px 25px -5px rgba(37, 211, 102, 0.6), 0 8px 10px -6px rgba(37, 211, 102, 0.6);
+            }
+            50% {
+                transform: translateY(-12px);
+                box-shadow: 0 25px 30px -5px rgba(229, 193, 88, 0.7), 0 20px 20px -6px rgba(229, 193, 88, 0.5);
+            }
+            100% {
+                transform: translateY(0px);
+                box-shadow: 0 10px 25px -5px rgba(37, 211, 102, 0.6), 0 8px 10px -6px rgba(37, 211, 102, 0.6);
+            }
+        }
+
+        .animate-whatsapp-simmer {
+            animation: dynamicFloat 4s ease-in-out infinite;
+        }
     </style>
 </head>
 <body class="bg-bold-darkgreen text-slate-100 antialiased gold-grid-pattern min-h-screen flex flex-col relative">
@@ -36,9 +56,10 @@
             <a href="#framework" class="text-slate-300 hover:text-gold-bright transition">The Security</a>
             <a href="#hardware" class="text-slate-300 hover:text-gold-bright transition">The Infrastructure</a>
             <a href="#projections" class="text-slate-300 hover:text-gold-bright transition">Returns</a>
+            <a href="#footprint" class="text-slate-300 hover:text-gold-bright transition">Footprint</a>
         </nav>
         <div>
-            <a href="#contact" class="border border-gold-bright text-gold-bright text-[11px] tracking-widest uppercase px-4 py-2 rounded hover:bg-gold-bright hover:text-slate-950 transition duration-300">
+            <a href="https://wa.me/917498285423?text=Namaste%20Willpower%20Team,%20I%20am%20interested%20in%20the%20FUEL%20Infrastructure%20Placement." target="_blank" rel="noopener noreferrer" class="border border-gold-bright text-gold-bright text-[11px] tracking-widest uppercase px-4 py-2 rounded hover:bg-gold-bright hover:text-slate-950 transition duration-300">
                 Inquire
             </a>
         </div>
@@ -238,7 +259,48 @@
         </div>
     </section>
 
-    <section id="contact" class="px-6 md:px-24 py-28 bg-[#011a0f]/60 text-center relative overflow-hidden">
+    <section id="footprint" class="px-6 md:px-24 py-24 border-b border-gold-accent bg-card-dark/30">
+        <div class="max-w-5xl mx-auto space-y-12">
+            <div class="text-center space-y-2">
+                <h2 class="heading-luxury text-3xl text-white">Industrial Footprint & <span class="text-gold-bright">Corporate Network</span></h2>
+                <p class="text-xs text-slate-400 font-light">Rooted in strategic engineering hubs to assure rapid structural deployment capability.</p>
+                <div class="w-20 h-[1px] bg-gold-bright mx-auto mt-4"></div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="md:col-span-2 bg-card-dark p-6 rounded-xl border border-gold-accent space-y-4 shadow-xl">
+                    <div class="flex items-center space-x-3 border-b border-gold-accent/40 pb-3">
+                        <span class="text-2xl">🏭</span>
+                        <h3 class="text-xs font-bold tracking-widest uppercase text-gold-bright">Primary Manufacturing Ecosystem</h3>
+                    </div>
+                    <div class="space-y-2 text-xs font-light leading-relaxed">
+                        <p class="font-bold text-white text-sm">Willpower Mobility Pvt Ltd</p>
+                        <p class="text-gold-champagne/80 italic">(A Willpower International Limited Group Company)</p>
+                        <p class="text-slate-300 mt-2">
+                            14-15, Gokul Industrial Park, Opp. Reflex Packaging,<br>
+                            Mahakali Mandir Road, Kubadthal, Daskroi,<br>
+                            Ahmedabad, Gujarat, India - 382430
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-card-dark p-6 rounded-xl border border-gold-accent space-y-4 shadow-xl">
+                    <div class="flex items-center space-x-3 border-b border-gold-accent/40 pb-3">
+                        <span class="text-2xl">🏢</span>
+                        <h3 class="text-xs font-bold tracking-widest uppercase text-gold-bright">Regional Offices</h3>
+                    </div>
+                    <ul class="space-y-3 text-xs tracking-wider text-slate-200">
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-gold-bright rounded-full mr-2"></span> Pune</li>
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-gold-bright rounded-full mr-2"></span> Hubballi</li>
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-gold-bright rounded-full mr-2"></span> Bengaluru</li>
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-gold-bright rounded-full mr-2"></span> Hyderabad</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="px-6 md:px-24 py-24 bg-[#011a0f]/60 text-center relative overflow-hidden">
         <div class="absolute inset-0 border-t border-gold-accent pointer-events-none"></div>
         <div class="max-w-3xl mx-auto space-y-6 relative z-10">
             <h2 class="heading-luxury text-3xl md:text-4xl text-white tracking-wide">
@@ -246,11 +308,22 @@
             </h2>
             <div class="w-16 h-[1px] bg-gold-bright mx-auto"></div>
             <p class="text-sm md:text-base text-gold-champagne/90 font-light leading-relaxed max-w-2xl mx-auto">
-                To guarantee prime operational locations and insulate grid utilization, Phase 1 capital placement blocks are strictly structured per milestone window.
+                To guarantee prime operational locations and insulate grid utilization, Phase 1 capital placement blocks are strictly structured per milestone window. Connect with us directly to evaluate options.
             </p>
             
+            <div class="grid md:grid-cols-2 gap-4 max-w-md mx-auto pt-4 text-left text-xs font-light bg-card-dark/40 p-4 rounded-xl border border-gold-accent/40">
+                <div class="space-y-1">
+                    <p class="text-gold-bright uppercase tracking-wider font-semibold">Direct Desk:</p>
+                    <a href="https://wa.me/917498285423?text=Namaste%20Willpower%20Team,%20I%20am%20interested%20in%20the%20FUEL%20Infrastructure%20Placement." target="_blank" class="text-slate-300 hover:text-white transition block font-mono">+91 7498285423</a>
+                </div>
+                <div class="space-y-1">
+                    <p class="text-gold-bright uppercase tracking-wider font-semibold">Secure Mailbox:</p>
+                    <a href="mailto:care@worldofwillpower.com" class="text-slate-300 hover:text-white transition block font-mono">care@worldofwillpower.com</a>
+                </div>
+            </div>
+
             <div class="pt-6">
-                <a href="mailto:operations@worldofwillpower.com" class="inline-block bg-gradient-to-r from-gold-bright via-yellow-500 to-yellow-600 text-slate-950 font-bold px-10 py-4 rounded-full shadow-2xl hover:from-yellow-400 hover:to-gold-bright transition-all duration-300 tracking-widest uppercase text-xs border border-white/10">
+                <a href="https://wa.me/917498285423?text=Namaste%20Willpower%20Team,%20I%20am%20interested%20in%20the%20FUEL%20Infrastructure%20Placement." target="_blank" rel="noopener noreferrer" class="inline-block bg-gradient-to-r from-gold-bright via-yellow-500 to-yellow-600 text-slate-950 font-bold px-10 py-4 rounded-full shadow-2xl hover:from-yellow-400 hover:to-gold-bright transition-all duration-300 tracking-widest uppercase text-xs border border-white/10">
                     Initiate Allocation Protocol
                 </a>
             </div>
@@ -264,10 +337,10 @@
         </div>
     </footer>
 
-    <a href="https://wa.me/91XXXXXXXXXX?text=Namaste%20Willpower%20Team,%20I%20am%20interested%20in%20the%20FUEL%20Infrastructure%20Placement." 
+    <a href="https://wa.me/917498285423?text=Namaste%20Willpower%20Team,%20I%20am%20interested%20in%20the%20FUEL%20Infrastructure%20Placement." 
        target="_blank" 
        rel="noopener noreferrer" 
-       class="fixed bottom-6 right-6 z-50 bg-[#25D366] hover:bg-[#E5C158] text-white hover:text-slate-950 p-4 rounded-full shadow-2xl transition-all duration-300 hover:scale-110 flex items-center justify-center group"
+       class="fixed bottom-6 right-6 z-50 bg-[#25D366] hover:bg-[#E5C158] text-white hover:text-slate-950 p-4 rounded-full animate-whatsapp-simmer transition-colors duration-300 flex items-center justify-center group"
        title="Connect via WhatsApp">
         <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.713-1.453L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.965C16.428 1.978 13.96 1.953 12.01 1.953c-5.444 0-9.866 4.372-9.87 9.802 0 1.685.459 3.332 1.328 4.793l-.997 3.645 3.76-.978zm11.567-5.65c-.29-.145-1.716-.845-1.983-.942-.266-.097-.461-.145-.655.145-.194.29-.75.942-.919 1.134-.169.194-.338.219-.628.074-.29-.145-1.226-.452-2.335-1.439-.863-.768-1.446-1.717-1.615-2.007-.169-.29-.018-.447.127-.591.13-.13.29-.338.435-.507.145-.169.194-.29.29-.483.097-.194.049-.363-.025-.507-.074-.145-.655-1.576-.897-2.158-.236-.569-.475-.492-.655-.501-.169-.008-.363-.01-.557-.01-.194 0-.507.073-.772.363-.266.29-1.014.991-1.014 2.415 0 1.424 1.039 2.798 1.184 2.992.145.194 2.046 3.125 4.956 4.381.692.298 1.233.477 1.655.611.695.22 1.329.19 1.83.114.558-.084 1.716-.701 1.958-1.378.242-.677.242-1.257.17-1.378-.073-.121-.266-.194-.556-.34z"/>
