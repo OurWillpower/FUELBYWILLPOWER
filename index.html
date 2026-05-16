@@ -46,7 +46,6 @@
             transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
         }
         
-        /* Interactive Hover State on top of the Simmering Layer */
         .animate-card-simmer:hover {
             transform: translateY(-6px);
             border-color: #E5C158 !important;
@@ -210,22 +209,42 @@
             </div>
 
             <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-card-dark p-8 rounded-2xl border-2 border-[#E5C158]/30 animate-card-simmer space-y-4">
-                    <div class="text-xs font-bold border border-gold-bright text-gold-bright px-3 py-1 rounded-full inline-block uppercase tracking-wider">Highway & Mall Heavyweights</div>
-                    <div class="text-4xl font-black text-white">8 Units</div>
-                    <div class="text-sm font-semibold text-gold-champagne">120 kW Super-Fast Dual-Gun Stations</div>
-                    <p class="text-xs text-slate-400 leading-relaxed font-light">
-                        Deployed straight across major traffic express lanes and expansive destination retail developments. Built to channel power to two consumer vehicles concurrently, compounding peak operational transaction velocities.
-                    </p>
+                <div class="bg-card-dark rounded-2xl border-2 border-[#E5C158]/30 animate-card-simmer overflow-hidden flex flex-col justify-between">
+                    <div class="w-full h-64 bg-slate-950/60 relative border-b border-[#E5C158]/20 flex items-center justify-center text-center p-4">
+                        <img src="highway-charger.jpg" alt="FUEL 120kW Super-Fast Charger" class="absolute inset-0 w-full h-full object-cover opacity-30">
+                        <div class="relative z-10 space-y-1">
+                            <span class="text-2xl block">⚡</span>
+                            <p class="text-xs uppercase tracking-widest text-gold-bright font-semibold">[ Charger Image Slot: 120kW Station ]</p>
+                            <p class="text-[11px] text-slate-500 font-light">Replace 'highway-charger.jpg' with your real product link tomorrow</p>
+                        </div>
+                    </div>
+                    <div class="p-6 space-y-3">
+                        <div class="text-xs font-bold border border-gold-bright text-gold-bright px-3 py-1 rounded-full inline-block uppercase tracking-wider">Highway & Mall Heavyweights</div>
+                        <div class="text-4xl font-black text-white">8 Units</div>
+                        <div class="text-sm font-semibold text-gold-champagne">120 kW Super-Fast Dual-Gun Stations</div>
+                        <p class="text-xs text-slate-400 leading-relaxed font-light">
+                            Deployed straight across major traffic express lanes and expansive destination retail developments. Built to channel power to two consumer vehicles concurrently, compounding peak operational transaction velocities.
+                        </p>
+                    </div>
                 </div>
 
-                <div class="bg-card-dark p-8 rounded-2xl border-2 border-[#E5C158]/30 animate-card-simmer space-y-4">
-                    <div class="text-xs font-bold border border-gold-bright text-gold-bright px-3 py-1 rounded-full inline-block uppercase tracking-wider">City Logistics Arteries</div>
-                    <div class="text-4xl font-black text-white">6 Units</div>
-                    <div class="text-sm font-semibold text-gold-champagne">60 kW Express Dual-Gun Stations</div>
-                    <p class="text-xs text-slate-400 leading-relaxed font-light">
-                        Integrated systematically directly into inner-city delivery sectors, e-commerce networks, and high-frequency taxi hub zones. Engineered to withstand relentless day-and-night utility operations.
-                    </p>
+                <div class="bg-card-dark rounded-2xl border-2 border-[#E5C158]/30 animate-card-simmer overflow-hidden flex flex-col justify-between">
+                    <div class="w-full h-64 bg-slate-950/60 relative border-b border-[#E5C158]/20 flex items-center justify-center text-center p-4">
+                        <img src="fleet-charger.jpg" alt="FUEL 60kW Express Charger" class="absolute inset-0 w-full h-full object-cover opacity-30">
+                        <div class="relative z-10 space-y-1">
+                            <span class="text-2xl block">🔋</span>
+                            <p class="text-xs uppercase tracking-widest text-gold-bright font-semibold">[ Charger Image Slot: 60kW Station ]</p>
+                            <p class="text-[11px] text-slate-500 font-light">Replace 'fleet-charger.jpg' with your real product link tomorrow</p>
+                        </div>
+                    </div>
+                    <div class="p-6 space-y-3">
+                        <div class="text-xs font-bold border border-gold-bright text-gold-bright px-3 py-1 rounded-full inline-block uppercase tracking-wider">City Logistics Arteries</div>
+                        <div class="text-4xl font-black text-white">6 Units</div>
+                        <div class="text-sm font-semibold text-gold-champagne">60 kW Express Dual-Gun Stations</div>
+                        <p class="text-xs text-slate-400 leading-relaxed font-light">
+                            Integrated systematically directly into inner-city delivery sectors, e-commerce networks, and high-frequency taxi hub zones. Engineered to withstand relentless day-and-night utility operations.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
