@@ -7,20 +7,24 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Inter:wght@300;400;500;600;700&display=swap');
+        
         body { font-family: 'Inter', sans-serif; background-color: #022314; }
         .heading-luxury { font-family: 'Marcellus', serif; }
         .text-gold-bright { color: #E5C158; }
         .bg-card-dark { background-color: #01160d; }
         
+        /* Optimized Slider Logic */
         .slider-slide { position: absolute; inset: 0; opacity: 0; transition: opacity 0.8s ease-in-out; }
         .slider-slide.active { opacity: 1; }
         
+        /* Card Simmer Animation */
         @keyframes boxSimmer {
             0% { box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5), 0 0 12px rgba(229, 193, 88, 0.08); border-color: rgba(229, 193, 88, 0.25); }
             50% { box-shadow: 0 4px 25px rgba(0, 0, 0, 0.6), 0 0 20px rgba(229, 193, 88, 0.22); border-color: rgba(229, 193, 88, 0.45); }
             100% { box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5), 0 0 12px rgba(229, 193, 88, 0.08); border-color: rgba(229, 193, 88, 0.25); }
         }
-        .animate-card-simmer { animation: boxSimmer 5s ease-in-out infinite; }
+        .animate-card-simmer { animation: boxSimmer 5s ease-in-out infinite; transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1); }
+        .animate-card-simmer:hover { transform: translateY(-6px); border-color: #E5C158 !important; box-shadow: 0 20px 35px rgba(0, 0, 0, 0.6), 0 0 28px rgba(229, 193, 88, 0.4) !important; }
     </style>
 </head>
 <body class="text-slate-100">
@@ -39,64 +43,60 @@
         <a href="https://wa.me/917498285423" class="border border-gold-bright text-gold-bright px-6 py-2 rounded text-xs uppercase tracking-widest hover:bg-gold-bright hover:text-black transition">Inquire</a>
     </header>
 
-    <section class="py-24 px-8 md:px-16 lg:px-24 border-b border-[#E5C158]/20">
-        <div class="max-w-7xl mx-auto grid lg:grid-cols-12 gap-16 items-center">
-            <div class="lg:col-span-6 space-y-8">
-                <div class="text-gold-bright font-bold uppercase tracking-widest text-xs">Infrastructure Allocation • Phase 1</div>
-                <h1 class="heading-luxury text-5xl md:text-6xl text-white leading-tight">Capitalize on India’s EV Transition.</h1>
-                <p class="text-slate-300 leading-relaxed text-lg font-light border-l-2 border-gold-bright pl-6">
-                    Secure steady, hands-free quarterly income. Your investment is backed by a legal first-priority claim on high-traffic FUEL™ commercial smart chargers until your principal is fully recovered.
-                </p>
-                <div class="grid grid-cols-2 gap-6">
-                    <div class="bg-card-dark p-6 rounded-2xl border border-[#E5C158]/30 animate-card-simmer">
-                        <div class="text-gold-bright text-[10px] uppercase tracking-widest">Capital Entry</div>
-                        <div class="text-2xl font-bold">₹2.25 Cr</div>
-                    </div>
-                    <div class="bg-card-dark p-6 rounded-2xl border border-[#E5C158]/30 animate-card-simmer">
-                        <div class="text-gold-bright text-[10px] uppercase tracking-widest">Revenue Basis</div>
-                        <div class="text-2xl font-bold">₹4.00/Unit</div>
+    <main>
+        <section class="py-24 px-8 md:px-16 lg:px-24 border-b border-[#E5C158]/20">
+            <div class="max-w-7xl mx-auto grid lg:grid-cols-12 gap-16 items-center w-full">
+                <div class="lg:col-span-6 space-y-8">
+                    <div class="text-gold-bright font-bold uppercase tracking-widest text-xs">Infrastructure Allocation • Phase 1</div>
+                    <h1 class="heading-luxury text-5xl md:text-6xl text-white leading-tight">Capitalize on India’s EV Transition.</h1>
+                    <p class="text-slate-300 leading-relaxed text-lg font-light border-l-2 border-gold-bright pl-6">
+                        Secure steady, hands-free quarterly income. Your investment is backed by a legal first-priority claim on high-traffic FUEL™ commercial smart chargers until your principal is fully recovered.
+                    </p>
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="bg-card-dark p-6 rounded-2xl border border-[#E5C158]/30 animate-card-simmer">
+                            <div class="text-gold-bright text-[10px] uppercase tracking-widest">Capital Entry</div>
+                            <div class="text-2xl font-bold">₹2.25 Cr</div>
+                        </div>
+                        <div class="bg-card-dark p-6 rounded-2xl border border-[#E5C158]/30 animate-card-simmer">
+                            <div class="text-gold-bright text-[10px] uppercase tracking-widest">Revenue Basis</div>
+                            <div class="text-2xl font-bold">₹4.00/Unit</div>
+                        </div>
                     </div>
                 </div>
+                <div class="lg:col-span-6 relative w-full aspect-[4/3] bg-black rounded-3xl overflow-hidden border border-[#E5C158]/30">
+                    <img src="plaza.jpeg" class="slider-slide active w-full h-full object-cover">
+                    <img src="tower.jpeg" class="slider-slide w-full h-full object-cover">
+                    <img src="guns.jpeg" class="slider-slide w-full h-full object-cover">
+                </div>
             </div>
-            <div class="lg:col-span-6 relative w-full aspect-[4/3] bg-black rounded-3xl overflow-hidden border border-[#E5C158]/30">
-                <img src="plaza.jpeg" class="slider-slide active w-full h-full object-cover">
-                <img src="tower.jpeg" class="slider-slide w-full h-full object-cover">
-                <img src="guns.jpeg" class="slider-slide w-full h-full object-cover">
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="reality" class="py-24 px-8 md:px-24 bg-[#01160d]">
-        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16">
-            <div class="space-y-6">
-                <h2 class="heading-luxury text-4xl text-white">Market Reality</h2>
-                <p class="text-slate-400 leading-relaxed font-light">EV adoption is rapidly outpacing charging infrastructure. We secure high-traffic commercial transit corridors and retail zones, ensuring maximum, predictable utilization of every charging unit we deploy.</p>
+        <section id="reality" class="py-24 px-8 md:px-24 bg-[#01160d] border-b border-[#E5C158]/10">
+            <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16">
+                <div><h2 class="heading-luxury text-4xl text-white mb-6">Market Reality</h2><p class="text-slate-400 leading-relaxed font-light">EV adoption is outpacing infrastructure. We secure premium commercial zones to ensure maximum utilization of every charging unit we deploy.</p></div>
+                <div id="security"><h2 class="heading-luxury text-4xl text-white mb-6">Security Model</h2><p class="text-slate-400 leading-relaxed font-light">Your capital is physically anchored. You hold a legal first-charge lien over your specific deployed asset block, ensuring primary rights until full recovery.</p></div>
             </div>
-            <div id="security" class="space-y-6">
-                <h2 class="heading-luxury text-4xl text-white">Security Model</h2>
-                <p class="text-slate-400 leading-relaxed font-light">Your capital is physically anchored. You hold a legal first-charge hypothecation lien over your specific deployed asset block. This ensures that you maintain the primary legal claim over the revenue-generating hardware until the recovery of your principal investment.</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="returns" class="py-24 px-8 md:px-24">
-        <div class="max-w-5xl mx-auto">
-            <h2 class="heading-luxury text-4xl text-white text-center mb-16">Return Horizon</h2>
-            <div class="bg-card-dark p-10 rounded-3xl border border-[#E5C158]/20">
-                <table class="w-full text-left text-sm text-slate-300">
-                    <thead><tr class="text-gold-bright uppercase text-xs border-b border-[#E5C158]/20"><th class="p-4">Timeline</th><th class="p-4">Projected Annual Income</th></tr></thead>
-                    <tbody class="divide-y divide-[#E5C158]/10">
-                        <tr class="p-4"><td class="p-4">Year 1</td><td class="p-4">₹78.62 Lakhs</td></tr>
-                        <tr class="p-4"><td class="p-4">Year 3</td><td class="p-4">₹2.62 Crores</td></tr>
-                        <tr><td class="p-4 font-bold text-white text-base">Year 10 (Maturity)</td><td class="p-4 font-bold text-white text-base">₹12.57 Crores</td></tr>
-                    </tbody>
-                </table>
+        <section id="returns" class="py-24 px-8 md:px-24">
+            <div class="max-w-7xl mx-auto">
+                <h2 class="heading-luxury text-4xl text-white text-center mb-16">Return Horizon</h2>
+                <div class="bg-card-dark p-10 rounded-3xl border border-[#E5C158]/20">
+                    <table class="w-full text-left text-sm text-slate-300">
+                        <thead><tr class="text-gold-bright uppercase text-xs border-b border-[#E5C158]/20"><th class="p-4">Timeline</th><th class="p-4">Projected Annual Income</th></tr></thead>
+                        <tbody class="divide-y divide-[#E5C158]/10">
+                            <tr class="p-4"><td class="p-4">Year 1</td><td class="p-4">₹78.62 Lakhs</td></tr>
+                            <tr class="p-4"><td class="p-4">Year 3</td><td class="p-4">₹2.62 Crores</td></tr>
+                            <tr><td class="p-4 font-bold text-white text-base">Year 10 (Maturity)</td><td class="p-4 font-bold text-white text-base">₹12.57 Crores</td></tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <footer id="footprint" class="py-20 px-8 border-t border-[#E5C158]/20 text-center text-slate-500 text-xs space-y-6">
-        <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-10">
+        <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-10">
             <div class="text-left"><h4 class="text-gold-bright uppercase tracking-widest text-[10px] mb-3">Manufacturing Unit</h4><p>4-15, Gokul Industrial Park, Opp. Reflex Packaging, Mahakali Mandir Road, Kubadthal, Daskroi, Ahmedabad, Gujarat 382430.</p></div>
             <div class="text-left"><h4 class="text-gold-bright uppercase tracking-widest text-[10px] mb-3">Regional Presence</h4><p>Thane | Pune | Hubballi | Bengalooru</p></div>
         </div>
