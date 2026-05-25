@@ -6,7 +6,7 @@
     <title>FUEL by Willpower™ — Premium EV Infrastructure Partnership</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Inter:wght@300;400;500;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Inter:wght=300;400;500;600;700&display=swap');
         
         body { font-family: 'Inter', sans-serif; }
         .heading-luxury { font-family: 'Marcellus', serif; }
@@ -126,10 +126,10 @@
             </div>
             
             <div class="lg:col-span-6 flex justify-center items-center w-full">
-                <div class="bg-card-dark/40 border-2 border-[#E5C158]/20 rounded-3xl w-full max-w-xl aspect-[4/3] shadow-2xl relative overflow-hidden group">
+                <div class="bg-card-dark border-2 border-[#E5C158]/20 rounded-3xl w-full max-w-xl aspect-[4/3] shadow-2xl relative overflow-hidden group">
                     
-                    <div class="slider-slide active absolute inset-0 w-full h-full">
-                        <div class="absolute inset-0 bg-gradient-to-t from-[#01160d] via-transparent to-black/30 z-10"></div>
+                    <div class="slider-slide active absolute inset-0 w-full h-full bg-slate-950 flex items-center justify-center">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#01160d] via-transparent to-black/40 z-10 pointer-events-none"></div>
                         <img src="plaza.jpeg" alt="FUEL Charging Plaza Array Layout" class="w-full h-full object-cover">
                         <div class="absolute bottom-6 left-6 right-6 z-20 flex justify-between items-end">
                             <div>
@@ -140,9 +140,10 @@
                         </div>
                     </div>
 
-                    <div class="slider-slide absolute inset-0 w-full h-full">
-                        <div class="absolute inset-0 bg-gradient-to-t from-[#01160d] via-transparent to-black/30 z-10"></div>
-                        <img src="tower.jpeg" alt="FUEL 120 kW Hyper Charger Tower" class="w-full h-full object-cover">
+                    <div class="slider-slide absolute inset-0 w-full h-full bg-slate-950/90 flex items-center justify-center">
+                        <div class="absolute inset-0 bg-cover bg-center opacity-20 blur-md scale-110 pointer-events-none" style="background-image: url('tower.jpeg');"></div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#01160d] via-transparent to-black/40 z-10 pointer-events-none"></div>
+                        <img src="tower.jpeg" alt="FUEL 120 kW Hyper Charger Tower" class="max-w-full max-h-full h-full w-auto object-contain relative z-10">
                         <div class="absolute bottom-6 left-6 right-6 z-20 flex justify-between items-end">
                             <div>
                                 <span class="text-[9px] uppercase tracking-widest text-gold-bright font-bold px-2 py-0.5 bg-slate-950/80 rounded border border-gold-bright/30">Core Hardware</span>
@@ -152,9 +153,10 @@
                         </div>
                     </div>
 
-                    <div class="slider-slide absolute inset-0 w-full h-full">
-                        <div class="absolute inset-0 bg-gradient-to-t from-[#01160d] via-transparent to-black/30 z-10"></div>
-                        <img src="guns.jpeg" alt="Dual Gun Output Configuration Detail" class="w-full h-full object-cover">
+                    <div class="slider-slide absolute inset-0 w-full h-full bg-slate-950/90 flex items-center justify-center">
+                        <div class="absolute inset-0 bg-cover bg-center opacity-20 blur-md scale-110 pointer-events-none" style="background-image: url('guns.jpeg');"></div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#01160d] via-transparent to-black/40 z-10 pointer-events-none"></div>
+                        <img src="guns.jpeg" alt="Dual Gun Output Configuration Detail" class="max-w-full max-h-full h-full w-auto object-contain relative z-10">
                         <div class="absolute bottom-6 left-6 right-6 z-20 flex justify-between items-end">
                             <div>
                                 <span class="text-[9px] uppercase tracking-widest text-gold-bright font-bold px-2 py-0.5 bg-slate-950/80 rounded border border-gold-bright/30">Interface Engineering</span>
@@ -258,14 +260,14 @@
             <div class="grid md:grid-cols-2 gap-8">
                 <div class="bg-card-dark rounded-2xl border-2 border-[#E5C158]/30 animate-card-simmer overflow-hidden flex flex-col justify-between group">
                     <div class="w-full h-80 bg-slate-950 relative border-b border-[#E5C158]/20 overflow-hidden flex items-center justify-center">
+                        <div class="absolute inset-0 bg-cover bg-center opacity-20 blur-md scale-110 pointer-events-none" style="background-image: url('tower.jpeg');"></div>
                         <div class="absolute inset-0 bg-gradient-to-t from-[#01160d] to-transparent z-10 opacity-70"></div>
-                        <img src="tower.jpeg" alt="FUEL 120kW Charger System Model" class="absolute inset-0 w-full h-full object-cover opacity-60 transform transition duration-700 group-hover:scale-105">
+                        <img src="tower.jpeg" alt="FUEL 120kW Charger System Model" class="max-w-full max-h-full h-full w-auto object-contain relative z-20 transform transition duration-700 group-hover:scale-102">
                         <div class="absolute top-4 left-4 z-30 max-w-[80px] bg-slate-950/80 p-1.5 rounded border border-gold-bright/30">
                             <img src="fuel%20new%20logo%20vector.png" alt="FUEL Logo" class="w-full h-auto">
                         </div>
-                        <div class="relative z-20 p-6 text-center">
+                        <div class="relative z-20 p-6 text-center hidden">
                             <span class="text-xs tracking-widest text-gold-bright font-bold uppercase block bg-slate-950/80 px-3 py-1 rounded-full inline-block border border-gold-bright/30 mb-2">120 kW HYPER CHARGER</span>
-                            <p class="text-xl font-bold text-white heading-luxury">REST • RECHARGE • REFRESH</p>
                         </div>
                     </div>
                     <div class="p-6 space-y-3">
@@ -472,6 +474,7 @@
        class="fixed bottom-6 right-6 z-50 bg-[#25D366] hover:bg-[#E5C158] text-white hover:text-slate-950 p-4 rounded-full shadow-2xl animate-whatsapp-simmer transition-colors duration-300 flex items-center justify-center group"
        title="Connect via WhatsApp">
         <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.713-1.453L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.965C16.428 1.978 13.96 1.953 12.01 1.953c-5.444 0-9.866 4.372-9.87 9.802 0 1.685.459 3.332 1.328 4.793l-.997 3.645 3.76-.978zm11.567-5.65c-.29-.145-1.716-.845-1.983-.942-.266-.097-.461-.145-.655.145-.194.29-.75.942-.919 1.134-.169.194-.338.219-.628.074-.29-.145-1.226-.452-2.335-1.439-.863-.768-1.446-1.717-1.615-2.007-.169-.29-.018-.447.127-.591.13-.13.29-.338.435-.507.145-.169.194-.29.29-.483.097-.194.049-.363-.025-.507-.074-.145-.655-1.576-.897-2.158-.236-.569-.475-.492-.655-.501-.169-.008-.363-.01-.557-.01-.194 0-.507.073-.772.363-.266.29-1.014.991-1.014 2.415 0 1.424 1.039 2.798 1.184 2.992.145.194 2.046 3.125 4.956 4.381.692.298 1.233.477 1.655.611.695.22 1.329.19 1.83.114.558-.084 1.716-.701 1.958-1.378.242-.677.242-1.257.17; animation: dynamicFloat 4s ease-in-out infinite; transition: all 0.3s ease-in-out;" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.713-1.453L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.965C16.428 1.978 13.96 1.953 12.01 1.953c-5.444 0-9.866 4.372-9.87 9.802 0 1.685.459 3.332 1.328 4.793l-.997 3.645 3.76-.978zm11.567-5.65c-.29-.145-1.716-.845-1.983-.942-.266-.097-.461-.145-.655.145-.194.29-.75.942-.919 1.134-.169.194-.338.219-.628.074-.29-.145-1.226-.452-2.335-1.439-.863-.768-1.446-1.717-1.615-2.007-.169-.29-.018-.447.127-.591.13-.13.29-.338.435-.507.145-.169.194-.29.29-.483.097-.194.049-.363-.025-.507-.074-.145-.655-1.576-.897-2.158-.236-.569-.475-.492-.655-.501-.169-.008-.363-.01-.557-.01-.194 0-.507.073-.772.363-.266.29-1.014.991-1.014 2.415 0 1.424 1.039 2.798 1.184 2.992.145.194 2.046 3.125 4.956 4.381.692.298 1.233.477 1.655.611.695.22 1.329.19 1.83.114.558-.084 1.716-.701 1.958-1.378.242-.677.242-1.257.17-1.378-.073-.121-.266-.194-.556-.34z"/>
         </svg>
     </a>
