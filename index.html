@@ -7,108 +7,88 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Inter:wght@300;400;500;600;700&display=swap');
-        
-        body { font-family: 'Inter', sans-serif; }
+        body { font-family: 'Inter', sans-serif; background-color: #022314; }
         .heading-luxury { font-family: 'Marcellus', serif; }
-        
-        .bg-bold-darkgreen { background-color: #022314 !important; }
-        .text-gold-champagne { color: #F5E3B3 !important; }
-        .text-gold-bright { color: #E5C158 !important; }
-        .bg-card-dark { background-color: #01160d !important; }
-
-        .gold-grid-pattern {
-            background-image: linear-gradient(to right, rgba(229, 193, 88, 0.05) 1px, transparent 1px), linear-gradient(to bottom, rgba(229, 193, 88, 0.05) 1px, transparent 1px);
-            background-size: 50px 50px;
-        }
-
-        @keyframes boxSimmer {
-            0% { box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5), 0 0 12px rgba(229, 193, 88, 0.08); border-color: rgba(229, 193, 88, 0.25); }
-            50% { box-shadow: 0 4px 25px rgba(0, 0, 0, 0.6), 0 0 20px rgba(229, 193, 88, 0.22); border-color: rgba(229, 193, 88, 0.45); }
-            100% { box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5), 0 0 12px rgba(229, 193, 88, 0.08); border-color: rgba(229, 193, 88, 0.25); }
-        }
-
-        .animate-card-simmer { animation: boxSimmer 5s ease-in-out infinite; transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1); }
-        .animate-card-simmer:hover { transform: translateY(-6px); border-color: #E5C158 !important; box-shadow: 0 20px 35px rgba(0, 0, 0, 0.6), 0 0 28px rgba(229, 193, 88, 0.4) !important; }
-
-        .slider-slide { opacity: 0; transition: opacity 0.8s ease-in-out; }
+        .text-gold-bright { color: #E5C158; }
+        .bg-card-dark { background-color: #01160d; }
+        .slider-slide { position: absolute; inset: 0; opacity: 0; transition: opacity 0.8s ease-in-out; }
         .slider-slide.active { opacity: 1; }
     </style>
 </head>
-<body class="bg-bold-darkgreen text-slate-100 antialiased gold-grid-pattern min-h-screen flex flex-col relative">
+<body class="text-slate-100">
 
-    <header class="sticky top-0 z-50 bg-[#022314]/90 backdrop-blur-md border-b border-[#E5C158]/20 px-6 py-4 md:px-12 flex justify-between items-center">
+    <header class="sticky top-0 z-50 bg-[#022314]/90 backdrop-blur-md border-b border-[#E5C158]/20 px-8 py-5 flex justify-between items-center">
         <div class="flex items-center space-x-3">
-            <img src="fuel new logo vector.png" alt="FUEL Logo" class="h-8 w-auto object-contain">
-            <div class="heading-luxury text-lg font-bold tracking-wider text-white hidden sm:block">FUEL <span class="text-gold-bright">by Willpower™</span></div>
+            <img src="fuel new logo vector.png" alt="FUEL Logo" class="h-10 w-auto">
+            <div class="heading-luxury text-xl font-bold text-white">FUEL <span class="text-gold-bright">by Willpower™</span></div>
         </div>
-        <nav class="hidden md:flex space-x-8 text-xs font-medium tracking-widest uppercase">
-            <a href="#reality" class="hover:text-gold-bright">Reality</a>
-            <a href="#framework" class="hover:text-gold-bright">Security</a>
-            <a href="#hardware" class="hover:text-gold-bright">Infrastructure</a>
-            <a href="#projections" class="hover:text-gold-bright">Returns</a>
+        <nav class="hidden md:flex space-x-10 text-xs font-medium uppercase tracking-widest text-slate-300">
+            <a href="#reality" class="hover:text-gold-bright transition">Reality</a>
+            <a href="#security" class="hover:text-gold-bright transition">Security</a>
+            <a href="#hardware" class="hover:text-gold-bright transition">Infrastructure</a>
+            <a href="#returns" class="hover:text-gold-bright transition">Returns</a>
         </nav>
-        <a href="https://wa.me/917498285423?text=Namaste" class="border border-gold-bright text-gold-bright text-[11px] tracking-widest uppercase px-4 py-2 rounded hover:bg-gold-bright hover:text-slate-950 transition">Inquire</a>
+        <a href="https://wa.me/917498285423" class="border border-gold-bright text-gold-bright px-6 py-2 rounded text-xs uppercase tracking-widest hover:bg-gold-bright hover:text-black transition">Inquire</a>
     </header>
 
-    <main>
-        <section class="min-h-[80vh] flex items-center px-6 md:px-16 lg:px-24 py-16">
-            <div class="max-w-7xl mx-auto grid lg:grid-cols-12 gap-12 items-center w-full">
-                <div class="lg:col-span-6 space-y-6">
-                    <h1 class="heading-luxury text-4xl md:text-5xl text-white leading-tight">
-                        Capitalize on India’s EV Transition: <br>
-                        <span class="text-gold-bright font-semibold">Premium Asset-Backed Infrastructure</span>
-                    </h1>
-                    <p class="text-slate-300 font-light border-l-2 border-gold-bright pl-6">
-                        Secure steady, hands-free quarterly income. Your investment is backed by a legal first-priority claim on high-traffic FUEL™ commercial smart chargers until your principal is fully recovered.
-                    </p>
-                    <div class="grid grid-cols-2 gap-4">
-                        <div class="bg-card-dark p-4 rounded-xl border-2 border-[#E5C158]/30 animate-card-simmer">
-                            <div class="text-gold-bright text-[10px] uppercase">Capital Entry</div>
-                            <div class="text-xl font-bold">₹2.25 Cr</div>
-                        </div>
-                        <div class="bg-card-dark p-4 rounded-xl border-2 border-[#E5C158]/30 animate-card-simmer">
-                            <div class="text-gold-bright text-[10px] uppercase">Revenue Share</div>
-                            <div class="text-xl font-bold">₹4.00/Unit</div>
-                        </div>
+    <section class="py-24 px-8 md:px-16 lg:px-24 border-b border-[#E5C158]/20">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+            <div class="space-y-8">
+                <div class="text-gold-bright font-bold uppercase tracking-widest text-xs">Infrastructure Allocation • Phase 1</div>
+                <h1 class="heading-luxury text-5xl md:text-6xl text-white leading-tight">Capitalize on India’s EV Transition.</h1>
+                <p class="text-slate-300 leading-relaxed text-lg font-light border-l-2 border-gold-bright pl-6">
+                    Secure steady, hands-free quarterly income. Your investment is backed by a legal first-priority claim on high-traffic FUEL™ commercial smart chargers until your principal is fully recovered.
+                </p>
+                <div class="grid grid-cols-2 gap-6">
+                    <div class="bg-card-dark p-6 rounded-2xl border border-[#E5C158]/30">
+                        <div class="text-gold-bright text-[10px] uppercase tracking-widest">Capital Entry</div>
+                        <div class="text-2xl font-bold">₹2.25 Cr <span class="text-xs font-normal opacity-60">+ GST</span></div>
                     </div>
-                </div>
-                <div class="lg:col-span-6">
-                    <div class="relative w-full aspect-[4/3] bg-slate-900 rounded-3xl overflow-hidden border-2 border-[#E5C158]/30">
-                        <img src="plaza.jpeg" class="slider-slide active absolute inset-0 w-full h-full object-cover">
-                        <img src="tower.jpeg" class="slider-slide absolute inset-0 w-full h-full object-cover">
-                        <img src="guns.jpeg" class="slider-slide absolute inset-0 w-full h-full object-cover">
+                    <div class="bg-card-dark p-6 rounded-2xl border border-[#E5C158]/30">
+                        <div class="text-gold-bright text-[10px] uppercase tracking-widest">Revenue Basis</div>
+                        <div class="text-2xl font-bold">₹4.00/Unit</div>
                     </div>
                 </div>
             </div>
-        </section>
-
-        <section id="reality" class="px-6 md:px-24 py-24 bg-[#01160d]/30 border-t border-[#E5C158]/10">
-            <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-12">
-                <div><h2 class="heading-luxury text-3xl text-white mb-6">Market Reality</h2><p class="text-slate-400">EV adoption is outpacing charging infrastructure. We are strategically placing assets in high-demand zones to capture this growth.</p></div>
-                <div id="framework"><h2 class="heading-luxury text-3xl text-white mb-6">Security Model</h2><p class="text-slate-400">Your capital is tied to physical assets. We use a first-charge lien structure, ensuring you have the primary rights to your allocated chargers.</p></div>
+            <div class="relative w-full aspect-[4/3] bg-black rounded-3xl overflow-hidden border border-[#E5C158]/30">
+                <img src="plaza.jpeg" class="slider-slide active w-full h-full object-cover">
+                <img src="tower.jpeg" class="slider-slide w-full h-full object-cover">
+                <img src="guns.jpeg" class="slider-slide w-full h-full object-cover">
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="projections" class="px-6 md:px-24 py-24">
-            <div class="max-w-5xl mx-auto">
-                <h2 class="heading-luxury text-3xl text-white text-center mb-12">Return Horizon</h2>
-                <div class="overflow-x-auto bg-card-dark p-6 rounded-2xl border border-[#E5C158]/20">
-                    <table class="w-full text-left text-sm">
-                        <tr class="text-gold-bright uppercase border-b border-[#E5C158]/20">
-                            <th class="p-3">Year</th><th class="p-3">Projected Annual Income</th>
-                        </tr>
-                        <tr class="border-b border-[#E5C158]/10"><td class="p-3">Year 3</td><td class="p-3">₹2.62 Crores</td></tr>
-                        <tr><td class="p-3 font-bold text-white">Year 10</td><td class="p-3 font-bold text-white">₹12.57 Crores</td></tr>
-                    </table>
-                </div>
+    <section id="reality" class="py-24 px-8 md:px-24 bg-[#01160d]">
+        <div class="max-w-5xl mx-auto space-y-16">
+            <div class="grid md:grid-cols-2 gap-12">
+                <div><h2 class="heading-luxury text-4xl mb-6">The Market Reality</h2><p class="text-slate-400 leading-relaxed">India’s shift to electric mobility is no longer a forecast; it is a current, operational fact. Commercial fleets and high-end consumers require massive charging availability. FUEL by Willpower™ captures this demand with premium, strategically placed hardware.</p></div>
+                <div id="security"><h2 class="heading-luxury text-4xl mb-6">Asset Security</h2><p class="text-slate-400 leading-relaxed">We provide institutional-grade protection. Every investment is linked to specific physical hardware, covered by a first-charge lien structure, ensuring your capital is fundamentally secured against operational risks.</p></div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
-    <footer id="footprint" class="text-center py-16 border-t border-[#E5C158]/10 text-[11px] text-gold-champagne/50 space-y-4">
-        <div><strong>Manufacturing Unit:</strong> 4-15, Gokul Industrial Park, Opp. Reflex Packaging, Mahakali Mandir Road, Kubadthal, Daskroi, Ahmedabad, Gujarat 382430.</div>
-        <div><strong>Regional Offices:</strong> Thane | Pune | Hubballi | Bengalooru</div>
-        <div>FUEL™ is a premium EV charging infrastructure brand owned and operated by Willpower Mobility Private Limited.</div>
+    <section id="returns" class="py-24 px-8 md:px-24">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="heading-luxury text-4xl mb-12 text-center">Return Projections</h2>
+            <div class="bg-card-dark p-8 rounded-3xl border border-[#E5C158]/20">
+                <table class="w-full text-left text-sm text-slate-300">
+                    <thead><tr class="text-gold-bright uppercase text-xs border-b border-[#E5C158]/20"><th class="p-4">Timeline</th><th class="p-4">Projected Annual Income</th></tr></thead>
+                    <tbody>
+                        <tr class="border-b border-[#E5C158]/10"><td class="p-4">Year 1</td><td class="p-4">₹78.62 Lakhs</td></tr>
+                        <tr class="border-b border-[#E5C158]/10"><td class="p-4">Year 3</td><td class="p-4">₹2.62 Crores</td></tr>
+                        <tr><td class="p-4 font-bold text-white text-base">Year 10 (Maturity)</td><td class="p-4 font-bold text-white text-base">₹12.57 Crores</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footprint" class="py-20 px-8 border-t border-[#E5C158]/20 text-center text-slate-500 text-xs space-y-4">
+        <div class="max-w-3xl mx-auto grid md:grid-cols-2 gap-6">
+            <div class="text-left"><h4 class="text-gold-bright uppercase tracking-widest text-[10px] mb-2">Manufacturing</h4><p>4-15, Gokul Industrial Park, Opp. Reflex Packaging, Mahakali Mandir Road, Kubadthal, Daskroi, Ahmedabad, Gujarat 382430.</p></div>
+            <div class="text-left"><h4 class="text-gold-bright uppercase tracking-widest text-[10px] mb-2">Regional Presence</h4><p>Thane | Pune | Hubballi | Bengalooru</p></div>
+        </div>
+        <div class="pt-8 uppercase tracking-widest opacity-60">FUEL™ by Willpower Mobility Private Limited. All Rights Reserved.</div>
     </footer>
 
     <script>
